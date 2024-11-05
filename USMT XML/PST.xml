@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/pst">
+<component type="Documents" context="UserAndSystem">
+<displayName>All PST files migrated from all fixed, no PST's migrated from network, regardless of context or outlook registry catalog settings</displayName>
+<role role="Data">
+<rules>
+<unconditionalExclude>
+<objectSet>
+<script>MigXmlHelper.GenerateDrivePatterns ("* [*.pst]", "Remote")</script>
+</objectSet>
+</unconditionalExclude>
+<unconditionalExclude>
+<objectSet>
+<pattern type="File">\\* [*.pst]</pattern>
+</objectSet>
+</unconditionalExclude>
+<include>
+<objectSet>
+<script>MigXmlHelper.GenerateDrivePatterns ("* [*.pst]", "Fixed")</script>
+</objectSet>
+</include>
+</rules>
+</role>
+</component>
+</migration>

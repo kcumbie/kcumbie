@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<migration urlid="https://urldefense.com/v3/__http://www.microsoft.com/migration/1.0/migxmlext/Mig_MSEDGE__;!!AKgNyAfk550h-spHnEo!an__aza9Qe9O_KYBcq05JqdfDoyAe453iIAX_koGfYbCuNVIqmBk4NQJ8xlfuadBghHF9HNtogVADhwqMMtBh9yeFMzH-A$ ">
+  <component type="Documents" context="System">
+    <displayName>Component to migrate Chrome Bookmarks and Shortcuts</displayName>
+    <role role="Data">
+      <rules>
+        <include>
+          <objectSet>
+            <pattern type="File">C:\Users\*AppData\Local\Microsoft\Edge\User Data\Default\ [Bookmarks]</pattern>
+            <pattern type="File">C:\Users\*AppData\Local\Microsoft\Edge\User Data\Default\ [Shortcuts]</pattern>
+            <pattern type="File">C:\Users\*AppData\Local\Microsoft\Edge\User Data\Default\ [History]</pattern>
+          </objectSet>
+        </include>
+      </rules>
+    </role>
+  </component>
+</migration>

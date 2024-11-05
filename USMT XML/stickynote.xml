@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/LegacyStickyNotes">
+    <component context="UserAndSystem" type="Application">
+        <displayName>LegacyStickyNotes</displayName>
+        <role role="Settings">
+            <rules context="User">
+                <include>
+                    <objectSet>
+                        <pattern type="File">%CSIDL_APPDATA%\Microsoft\Sticky Notes\[StickyNotes.snt]</pattern>
+                    </objectSet>
+                </include>
+                <locationModify script="MigXmlHelper.RelativeMove('%CSIDL_APPDATA%\Microsoft\Sticky Notes','%CSIDL_LOCAL_APPDATA%\Packages\Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe\LocalState\Legacy\[ThresholdNotes.snt]')">
+                    <objectSet>
+                        <pattern type="File">%CSIDL_APPDATA%\Microsoft\Sticky Notes\[StickyNotes.snt]</pattern>
+                    </objectSet>
+                </locationModify>
+            </rules>
+        </role>
+    </component>
+</migration>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/miguser">
+   <component type="Documents" context="User">
+      <displayName>FileAssociation</displayName>
+      <role role="Data">
+         <rules>
+            <unconditionalExclude>
+               <objectSet>
+                  <pattern type="Registry"> HKCU\Software\Microsoft\Windows\Shell\Associations\*[FileAssociationsUpdateVersion]</pattern>
+               </objectSet>
+            </unconditionalExclude>
+         </rules>
+      </role>
+   </component>
+</migration>

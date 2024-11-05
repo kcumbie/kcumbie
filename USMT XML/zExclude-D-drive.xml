@@ -1,0 +1,14 @@
+<migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/zExcludeDriveD">
+    <component type="Documents" context="UserAndSystem">
+    	<displayName>Exclude Drive</displayName>
+		<role role="Data">
+			<rules>
+				<unconditionalExclude>
+		        	<objectSet>
+		        		   <pattern type="File"> D:\* [*]</pattern>                   
+		        	</objectSet>
+		      	</unconditionalExclude>
+		  	</rules>
+		  </role>
+    </component>
+</migration>
