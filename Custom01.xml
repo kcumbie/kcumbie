@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/Custom01">
+    <component type="Documents" context="UserAndSystem">
+    	<displayName>Exclude Drive</displayName>
+		<role role="Data">
+			<rules>
+				<unconditionalExclude>
+		        	<objectSet>
+		        		   
+<pattern type="File"> C:\Drivers\*   	[*]</pattern>
+
+<pattern type="File"> C:\Intel\* 		 [*]</pattern>
+
+<pattern type="File"> C:\Windows\Media\*	[*]</pattern>
+
+<pattern type="File"> C:\Windows\System32\config\systemprofile\*	           [*]</pattern>
+                  
+<pattern type="File"> C:\ProgramData\Microsoft\Windows Defender\Platform\* [*]</pattern>
+
+<pattern type="File"> C:\ProgramData\Microsoft\Windows Defender\*	                                [*]</pattern>
+
+<pattern type="File"> C:\Windows\ServiceProfiles\NetworkService\*	                                [*]</pattern>
+
+<pattern type="File"> C:\Windows\ServiceProfiles\LocalService\*	                                    [*]</pattern>
+ 
+<pattern type="File"> C:\Windows\ServiceProfiles\*	                                    [*]</pattern>
+                                          
+
+
+		        	</objectSet>
+		      	</unconditionalExclude>
+		  	</rules>
+		  </role>
+    </component>
+</migration>
+
+
+
+
+
+
+
